@@ -19,7 +19,7 @@ container.addEventListener('mousemove', (e) => { /* 3 inner width */
 
 // Animate In
 container.addEventListener('mouseenter', (e) => {
-    card.style.transition = 'none';
+    card.style.transition = 'all 0.3 ease';
     //Popout
     title.style.transform = 'translateZ(150px)'; /* 4 translate */
     sneeker.style.transform = 'translateZ(200px) rotateZ(-45deg)';
@@ -30,7 +30,7 @@ container.addEventListener('mouseenter', (e) => {
 
 //Animate Out
 container.addEventListener('mouseleave', (e) => {
-    card.style.transition = 'all 0.3s ease'; 
+    card.style.transition = 'all 0.5s ease'; 
     card.style.transform = `rotateY(0deg) rotateX(0deg)`;
     //Pop back
     title.style.transform = 'translateZ(0px)'
